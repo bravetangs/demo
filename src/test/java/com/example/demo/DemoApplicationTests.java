@@ -18,9 +18,9 @@ import org.springframework.util.Assert;
 import com.example.demo.domain.Department;
 import com.example.demo.domain.Role;
 import com.example.demo.domain.User;
-import com.example.demo.service.DepartmentRepository;
-import com.example.demo.service.RoleRepository;
-import com.example.demo.service.UserRepository;
+import com.example.demo.mysqlRepos.DepartmentRepository;
+import com.example.demo.mysqlRepos.RoleRepository;
+import com.example.demo.mysqlRepos.UserRepository;
 import com.google.gson.Gson;
 
 @RunWith(SpringRunner.class)
