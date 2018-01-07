@@ -27,7 +27,7 @@ public class DruidConfiguration {
 	public FilterRegistrationBean statFilter() {
 		FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean<>(new WebStatFilter());
 		filterRegistrationBean.addUrlPatterns("/*");
-		filterRegistrationBean.addInitParameter("exclusions", "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*");;
+		filterRegistrationBean.addInitParameter("exclusions", "*.jsp,*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*");;
 		return filterRegistrationBean;
 	}
 }

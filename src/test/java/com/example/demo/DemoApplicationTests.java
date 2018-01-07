@@ -3,7 +3,6 @@ package com.example.demo;
 import java.util.Date;
 import java.util.List;
 
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,19 +34,21 @@ public class DemoApplicationTests {
 
 	@Test
 	public void contextLoads() {
-		Pageable pageable = new PageRequest(0, 10, new Sort(Sort.Direction.ASC,"id"));
-		Page<User> page = userRepository.findAll(pageable);
-		Assert.notNull(page);
-		for(User user : page.getContent()) {
-			System.out.println(new Gson().toJson(user));
-		}
+//		Pageable pageable = new PageRequest(0, 10, new Sort(Sort.Direction.ASC,"id"));
+//		Page<User> page = userRepository.findAll(pageable);
+//		Assert.notNull(page);
+//		for(User user : page.getContent()) {
+//			System.out.println(new Gson().toJson(user));
+//		}
+//		List<User> users = userRepository.findBy();
+//		System.out.println(new Gson().toJson(users));
 	}
 	
-	@Before
+//	@Before
 	public void initData() {
-		userRepository.deleteAll();
-		departmentRepository.deleteAll();
-		roleRepository.deleteAll();
+//		userRepository.deleteAll();
+//		departmentRepository.deleteAll();
+//		roleRepository.deleteAll();
 		
 		Department dept = new Department();
 		dept.setName("开发部");
